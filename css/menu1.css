@@ -1,0 +1,33 @@
+/* menu1 main style */
+/* 인기레시피 */
+@font-face { font-family: 'ONE-Mobile-POP'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff'); } 
+
+/* 페이지제목 */
+h1,h2 { font-family: 'GmarketSansMedium'; color: #000; } 
+main { margin: 40px auto; top: 30px; max-width: 1200px; background-color: #fff; border: 2px solid #000; border-radius: 0 0 30px 30px; } 
+main h1 { position: relative; margin: -30px 0 0 -2px; padding: 15px; width: calc(100% + 4px); background-color: #ED7D31; border: 2px solid #000; border-radius: 50px; text-align: center; font-size: 18px; } 
+main h1 a { display: inline-block; position: absolute; top: 12px; right: 20px; width: 30px; height: 30px; background-color: #FFE490; color: #000; border: 2px solid #000; border-radius: 50%; font-family: 'ONE-Mobile-POP'; line-height: 22px; } 
+main h1 a:hover { transform: scale(1.1) rotate(90deg); transition: all .3s } 
+main h1 a:not(:hover) { transform: rotate(-90deg); transition: all .3s; } 
+
+/* 메인 콘텐츠 */
+main #best_recipe_wrap { max-width: 1100px; margin: 0 auto; padding: 20px 25px 40px 25px; } 
+main div.recipe { display: inline-block; margin: 20px 10px; width: 30.5%; height: 300px; background-color: #fff; border: 2px solid #000; border-radius: 30px 30px 0 0; background-repeat: no-repeat; background-size: cover; background-position: center; } 
+main div.recipe h2.recipe_title { margin: 280px 0 0 -2px; padding: 10px; width: calc(100% + 4px); background-color: #FFD960; border: 2px solid #000; border-radius: 50px; text-align: center; font-size: 15px; } 
+main div.recipe h2.recipe_title:hover { background-color: #ED7D31; } 
+
+/* 레시피 이미지 */
+#recipe1 { background-image:url(../img/r1.png); } 
+#recipe2 { background-image:url(../img/r2.png); } 
+#recipe3 { background-image:url(../img/r3.png); } 
+#recipe4 { background-image:url(../img/r4.png); } 
+#recipe5 { background-image:url(../img/r5.png); } 
+#recipe6 { background-image:url(../img/r6.png); } 
+
+
+@media screen and (max-width: 1024px) { 
+
+    main div.recipe { width: calc(100% - 20px); } 
+    main #recipe_wrap { padding: 10px; } 
+    
+}

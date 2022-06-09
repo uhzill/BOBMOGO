@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="./img/site_img.png" />
+
+    <!-- 파비콘 -->
+    <link rel="icon" href="./img/favicon_32.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="./img/favicon_180.ico" sizes="180x180" />
+
+    <!-- CSS -->
+    <link rel='stylesheet' type='text/css' href='./css/common.css' />
+    <link rel='stylesheet' type='text/css' href='./css/menu2.css' />
+
+    <title>BOB MOGO - 레시피</title>
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div id="wrap">
+        <header>
+            <nav class="center_wrap" >
+                <h1><a href="./index.html"></a></h1>
+                <ul id="gnb" >
+                    <li><a href="./menu1.html">인기</a></li>
+                    <li><a href="./menu2.html">레시피</a></li>
+                    <li><a href="./menu3.html">이벤트</a></li>
+                    <li><a href="./menu4.html">오늘식사</a></li>
+                    <li><a href="./menu5.html">MY</a></li>
+                </ul>
+                <button id="menu" class="menu-trigger">
+                    <span class="blind">메뉴보기</span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </header>
+
+        <main>
+        <h1>모든 레시피 <a href="index.html">x</a></h1>
+
+        <section id='recipe_tabbar'>
+            <input id="tab1" type="radio" name="tab" checked="checked">
+            <input id="tab2" type="radio" name="tab">
+            <input id="tab3" type="radio" name="tab">
+            <input id="tab4" type="radio" name="tab">
+            <input id="tab5" type="radio" name="tab">
+            <input id="tab6" type="radio" name="tab">
+        
+            <section class='button'>
+                <label for="tab1">덮밥/볶음밥/죽</label>
+                <label for="tab2">국/탕/찌개</label>
+                <label for="tab3">면</label>
+                <label for="tab4">반찬</label>
+                <label for="tab5">간식</label>
+                <label for="tab6">기타</label>
+            </section>
+        
+            <div class="tab_item">
+                <div class="recipe_content">
+                    <div id="tab1_1" class="recipe">
+                        <a href="#"><h2 class="recipe_title">진짜 김치밖에 없을 때 김치볶음밥</h2></a>
+                    </div>
+                    <div id="tab1_2" class="recipe">
+                        <a href="#"><h2 class="recipe_title">이거슨..최고의 골뱅이덮밥</h2></a>
+                    </div>
+                    <div id="tab1_3" class="recipe">
+                        <a href="#"><h2 class="recipe_title">단팥죽</h2></a>
+                    </div>
+                    <div id="tab1_4" class="recipe">
+                        <a href="#"><h2 class="recipe_title">찬밥으로 맛탕을..! ❣️찬밥맛탕❣️</h2></a>
+                    </div>
+                    <div id="tab1_5" class="recipe">
+                        <a href="#"><h2 class="recipe_title">아이들 영양간식 참치주먹밥</h2></a>
+                    </div>
+                    <div id="tab1_6" class="recipe">
+                        <a href="#"><h2 class="recipe_title">연어오차즈케</h2></a>
+                    </div>
+                    <ul id="dot">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="tab_item">
+                <div class="recipe_content">
+                <div id="tab2_1" class="recipe">
+                    <a href="./recipe.html"><h2 class="recipe_title">초간단 순두부찌개</h2></a>
+                </div>
+                <div id="tab2_2" class="recipe">
+                    <a href="#"><h2 class="recipe_title">😎부대찌개 달인 될 수 있음😎</h2></a>
+                </div>
+                <div id="tab2_3" class="recipe">
+                    <a href="#"><h2 class="recipe_title">생일날 바다향 미역국 어떠신가요</h2></a>
+                </div>
+                <div id="tab2_4" class="recipe">
+                    <a href="#"><h2 class="recipe_title">만들기 쉬운 계란 실파국!</h2></a>
+                </div>
+                <div id="tab2_5" class="recipe">
+                    <a href="#"><h2 class="recipe_title">얼큰 육개장</h2></a>
+                </div>
+                <div id="tab2_6" class="recipe">
+                    <a href="#"><h2 class="recipe_title">어묵꼬치</h2></a>
+                </div>
+                <ul id="dot">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                </div>
+            </div>
+        
+            <div class="tab_item">
+                <div class="recipe_content">
+                    <div id="tab3_1" class="recipe">
+                        <a href="#"><h2 class="recipe_title">잔치국수 레시피입니당</h2></a>
+                    </div>
+                    <div id="tab3_2" class="recipe">
+                        <a href="#"><h2 class="recipe_title">볶음우동</h2></a>
+                    </div>
+                    <div id="tab3_3" class="recipe">
+                        <a href="#"><h2 class="recipe_title">까르보나라 (한국식)</h2></a>
+                    </div>
+                    <div id="tab3_4" class="recipe">
+                        <a href="#"><h2 class="recipe_title">느끼하지 않은 김치 파스타</h2></a>
+                    </div>
+                    <div id="tab3_5" class="recipe">
+                        <a href="#"><h2 class="recipe_title">오징어먹물 파스타</h2></a>
+                    </div>
+                    <div id="tab3_6" class="recipe">
+                        <a href="#"><h2 class="recipe_title">오븐스파게티</h2></a>
+                    </div>
+                    <ul id="dot">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="tab_item">
+                <div class="recipe_content">
+                    <div id="tab4_1" class="recipe">
+                        <a href="#"><h2 class="recipe_title">호박가지 된장구이</h2></a>
+                    </div>
+                    <div id="tab4_2" class="recipe">
+                        <a href="#"><h2 class="recipe_title">아삭아삭 연근 볶음</h2></a>
+                    </div>
+                    <div id="tab4_3" class="recipe">
+                        <a href="#"><h2 class="recipe_title">깻잎 논쟁 가보자고</h2></a>
+                    </div>
+                    <div id="tab4_4" class="recipe">
+                        <a href="#"><h2 class="recipe_title">두릅김치가 얼마나 맛있게요~</h2></a>
+                    </div>
+                    <div id="tab4_5" class="recipe">
+                        <a href="#"><h2 class="recipe_title">소박소박 오이소박</h2></a>
+                    </div>
+                    <div id="tab4_6" class="recipe">
+                        <a href="#"><h2 class="recipe_title">준비중인 레시피</h2></a>
+                    </div>
+                    <ul id="dot">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="tab_item">
+                <div class="recipe_content">
+                    <div id="tab5_1" class="recipe">
+                        <a href="#"><h2 class="recipe_title">고구마맛탕</h2></a>
+                    </div>
+                    <div id="tab5_2" class="recipe">
+                        <a href="#"><h2 class="recipe_title">사과탕</h2></a>
+                    </div>
+                    <div id="tab5_3" class="recipe">
+                        <a href="#"><h2 class="recipe_title">떡볶이 황금레시피</h2></a>
+                    </div>
+                    <div id="tab5_4" class="recipe">
+                        <a href="#"><h2 class="recipe_title">김치 핫도그</h2></a>
+                    </div>
+                    <div id="tab5_5" class="recipe">
+                        <a href="#"><h2 class="recipe_title">준비중인 레시피</h2></a>
+                    </div>
+                    <div id="tab5_6" class="recipe">
+                        <a href="#"><h2 class="recipe_title">준비중인 레시피</h2></a>
+                    </div>
+                    <ul id="dot">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="tab_item">
+                <div class="recipe_content">
+                    <div id="tab6_1" class="recipe">
+                        <a href="#"><h2 class="recipe_title">준비중인 레시피</h2></a>
+                    </div>
+                    <div id="tab6_2" class="recipe">
+                        <a href="#"><h2 class="recipe_title">준비중인 레시피</h2></a>
+                    </div>
+                    <div id="tab6_3" class="recipe">
+                        <a href="#"><h2 class="recipe_title">준비중인 레시피</h2></a>
+                    </div>
+                    <div id="tab6_4" class="recipe">
+                        <a href="#"><h2 class="recipe_title">준비중인 레시피</h2></a>
+                    </div>
+                    <div id="tab6_5" class="recipe">
+                        <a href="#"><h2 class="recipe_title">준비중인 레시피</h2></a>
+                    </div>
+                    <div id="tab6_6" class="recipe">
+                        <a href="#"><h2 class="recipe_title">준비중인 레시피</h2></a>
+                    </div>
+                    <ul id="dot">
+                        
+                    </ul>
+                </div>
+            </div>
+            </section>
+
+        </main>
+        <div class="clear"></div>
+        <footer>
+            <address class="center_wrap">
+                <p>
+                    Tel. <a href="tel:010-1234-1234">010-5123-4110</a><br>
+                    Mail. <a href="mailto:22161041@kaywon.ac.kr">22161041@kaywon.ac.kr</a><br>
+                    <small>Image source. https://www.menupan.com/ &nbsp; |  &nbsp; https://www.flaticon.com/kr/</small>
+                </p>
+                <p><small>Copyright ⓒ 2022 Limjoohyun All rights reserved.</small></p>
+            </address>
+        </footer>
+    </div>
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+
+</html>

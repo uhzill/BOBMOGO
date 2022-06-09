@@ -1,0 +1,109 @@
+/* menu2 main style */
+/* 모든레시피 */
+@font-face { font-family: 'ONE-Mobile-POP'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff'); } 
+
+/* 페이지제목 */
+h1,h2 { font-family: 'GmarketSansMedium'; color: #000; } 
+main { margin: 40px auto; top: 30px; max-width: 1200px; background-color: #fff; border: 2px solid #000; border-radius: 0 0 30px 30px; } 
+main h1 { position: relative; margin: -30px 0 0 -2px; padding: 15px; width: calc(100% + 4px); background-color: #ED7D31; border: 2px solid #000; border-radius: 50px; text-align: center; font-size: 18px; } 
+main h1 a { display: inline-block; position: absolute; top: 12px; right: 20px; width: 30px; height: 30px; background-color: #FFE490; color: #000; border: 2px solid #000; border-radius: 50%; font-family: 'ONE-Mobile-POP'; line-height: 22px; } 
+main h1 a:hover { transform: scale(1.1) rotate(90deg); transition: all .3s } 
+main h1 a:not(:hover) { transform: rotate(-90deg); transition: all .3s; } 
+
+
+/* 메인 콘텐츠 */
+main #recipe_wrap { max-width: 1100px; margin: 0 auto; padding: 20px 25px 40px 25px; } 
+main div.recipe { display: inline-block; margin: 20px 10px; width: 30.5%; height: 300px; background-color: #fff; border: 2px solid #000; border-radius: 30px 30px 0 0; background-repeat: no-repeat; background-size: cover; background-position: center; } 
+main div.recipe h2.recipe_title { margin: 280px 0 0 -2px; padding: 10px; width: calc(100% + 4px); background-color: #FFD960; border: 2px solid #000; border-radius: 50px; text-align: center; font-size: 15px; } 
+main div.recipe h2.recipe_title:hover { background-color: #ED7D31; } 
+
+main section#recipe_tabbar { margin: 0 auto; padding: 30px; width: calc(100% - 10px); font-family: 'GmarketSansMedium'; } 
+main section#recipe_tabbar .tab_item .recipe_content { padding: 10px 0 0 10px; border: solid 2px #000; background: #ffcf33; border-radius: 0 20px 20px 20px; } 
+
+/* 탭 구성 */
+input:nth-of-type(1), input ~ div { display: none; } 
+input:nth-of-type(1):checked ~div:nth-of-type(1) { display: block; } 
+input:nth-of-type(2), input ~ div { display: none; } 
+input:nth-of-type(2):checked ~div:nth-of-type(2) { display: block; } 
+input:nth-of-type(3), input ~ div { display: none; } 
+input:nth-of-type(3):checked ~div:nth-of-type(3) { display: block; } 
+input:nth-of-type(4), input ~ div { display: none; } 
+input:nth-of-type(4):checked ~div:nth-of-type(4) { display: block; } 
+input:nth-of-type(5), input ~ div { display: none; } 
+input:nth-of-type(5):checked ~div:nth-of-type(5) { display: block; } 
+input:nth-of-type(6), input ~ div { display: none; } 
+input:nth-of-type(6):checked ~div:nth-of-type(6) { display: block; } 
+
+/* 탭 버튼 모양 */
+section.button { overflow: hidden; } 
+section.button label { display: block; float: left; max-width: 160px; height: 40px; padding: 10px 20px; text-align: center; box-sizing: border-box; border: solid 2px #000; border-radius: 20px 20px 0 0; border-bottom: none; background: #FFE490; color: #000; cursor: pointer; } 
+section.button label:hover { background: #ffcf33; } 
+input:nth-of-type(1):checked ~ section.button > label:nth-of-type(1) { background: #ffcf33; color: #000; } 
+input:nth-of-type(2):checked ~ section.button > label:nth-of-type(2) { background: #ffcf33; color: #000; } 
+input:nth-of-type(3):checked ~ section.button > label:nth-of-type(3) { background: #ffcf33; color: #000; } 
+input:nth-of-type(4):checked ~ section.button > label:nth-of-type(4) { background: #ffcf33; color: #000; } 
+input:nth-of-type(5):checked ~ section.button > label:nth-of-type(5) { background: #ffcf33; color: #000; } 
+input:nth-of-type(6):checked ~ section.button > label:nth-of-type(6) { background: #ffcf33; color: #000; } 
+
+
+/* 레시피 이미지 */
+#tab1_1 { background-image: url(../img/r6.png); } 
+#tab1_2 { background-image: url(../img/r7.png); } 
+#tab1_3 { background-image: url(../img/r8.png); } 
+#tab1_4 { background-image: url(../img/r18.png); } 
+#tab1_5 { background-image: url(../img/r19.png); } 
+#tab1_6 { background-image: url(../img/r20.png); } 
+
+#tab2_1 { background-image: url(../img/r1.png); } 
+#tab2_2 { background-image: url(../img/r3.png); } 
+#tab2_3 { background-image: url(../img/r4.png); } 
+#tab2_4 { background-image: url(../img/r21.png); } 
+#tab2_5 { background-image: url(../img/r23.png); } 
+#tab2_6 { background-image: url(../img/r27.png); } 
+
+#tab3_1 { background-image: url(../img/r2.png); } 
+#tab3_2 { background-image: url(../img/r15.png); } 
+#tab3_3 { background-image: url(../img/r16.png); } 
+#tab3_4 { background-image: url(../img/r17.png); } 
+#tab3_5 { background-image: url(../img/r28.png); } 
+#tab3_6 { background-image: url(../img/r29.png); } 
+
+#tab4_1 { background-image: url(../img/r10.png); } 
+#tab4_2 { background-image: url(../img/r14.png); } 
+#tab4_3 { background-image: url(../img/r24.png); } 
+#tab4_4 { background-image: url(../img/r25.png); } 
+#tab4_5 { background-image: url(../img/r26.png); } 
+#tab4_6 { background-image: url(../img/ing.png); } 
+
+#tab5_1 { background-image: url(../img/r30.png); } 
+#tab5_2 { background-image: url(../img/r31.png); } 
+#tab5_3 { background-image: url(../img/r5.png); } 
+#tab5_4 { background-image: url(../img/r32.png); } 
+#tab5_5 { background-image: url(../img/ing.png); } 
+#tab5_6 { background-image: url(../img/ing.png); } 
+
+#tab6_1 { background-image: url(../img/ing.png); } 
+#tab6_2 { background-image: url(../img/ing.png); } 
+#tab6_3 { background-image: url(../img/ing.png); } 
+#tab6_4 { background-image: url(../img/ing.png); } 
+#tab6_5 { background-image: url(../img/ing.png); } 
+#tab6_6 { background-image: url(../img/ing.png); } 
+
+
+/* 점 리스트 */
+#dot { margin: 50px auto; width: 180px; } 
+#dot li { display: inline-block; width: 15px; height: 15px; border: 4px solid #ED7D31; border-radius: 50%; margin: 0 5px; cursor: pointer; } 
+#dot li:nth-of-type(1) { background-color: #ED7D31; } 
+#dot li:hover { background-color: #ED7D31; } 
+
+@media screen and (max-width: 1024px) { 
+
+    main div.recipe { width: calc(100% - 30px); } 
+    main section#recipe_tabbar { padding: 5px; } 
+
+}
+
+@media screen and (max-width: 768px) { 
+    section.button label { margin: 2px 2px; border-radius: 50px; border-bottom: 2px solid #000; } 
+    main section#recipe_tabbar .tab_item .recipe_content { border-radius: 20px; } 
+}

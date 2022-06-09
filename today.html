@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="./img/site_img.png" />
+
+    <!-- 파비콘 -->
+    <link rel="icon" href="./img/favicon_32.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="./img/favicon_180.ico" sizes="180x180" />
+
+    <!-- CSS -->
+    <link rel='stylesheet' type='text/css' href='./css/common.css' />
+    <link rel='stylesheet' type='text/css' href='./css/today.css' />
+
+    <title>BOB MOGO - 오늘식사</title>
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div id="wrap">
+        <header>
+            <nav class="center_wrap" >
+                <h1><a href="./index.html"></a></h1>
+                <ul id="gnb" >
+                    <li><a href="./menu1.html">인기</a></li>
+                    <li><a href="./menu2.html">레시피</a></li>
+                    <li><a href="./menu3.html">이벤트</a></li>
+                    <li><a href="./menu4.html">오늘식사</a></li>
+                    <li><a href="./menu5.html">MY</a></li>
+                </ul>
+                <button id="menu" class="menu-trigger">
+                    <span class="blind">메뉴보기</span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </header>
+
+        <main>
+            <h1>더 먹고싶다 배고파<a href="index.html">x</a></h1>
+
+            <section class='today_content'>
+                <div id="today0"></div>
+                <div id="box">
+    
+                    <p id="text">
+                        오늘 먹은 저녁 인증합니당 <br>
+                        직접 만든 건 아니고 집앞에서 새로 생긴 곳에서 온더고 도시락 팔길래 사먹어 봤어요! 
+                        종류가 많았는데 제가 먹은 건 통모짜치즈 불닭이고 가격은 오천원이었어요. <br>
+                        양이 생각보다 조금 적어서 아쉽긴 한데, 너무 맛있어서 자주 사먹을 것 같네유 (❁´◡`❁) <br><br>
+                        다들 저녁 드셨나요!!
+                    </p>
+                </div>
+                <div id="comment">
+                    <h4>댓글 0</h4>
+                    <textarea cols="30" rows="10"></textarea>
+                    <button id="comment_btn"> 댓글달기</button>
+                    <p><small><b>관리자의 말</b>📢 댓글은 서로 불편하지 않게! 나쁜말 금지! 즐겁게 이용하기! 약속!</small></p>
+                </div>
+            </section>
+        </main>
+
+        <div class="clear"></div>
+        <footer>
+            <address class="center_wrap">
+                <p>
+                    Tel. <a href="tel:010-1234-1234">010-5123-4110</a><br>
+                    Mail. <a href="mailto:22161041@kaywon.ac.kr">22161041@kaywon.ac.kr</a><br>
+                    <small>Image source. https://www.menupan.com/ &nbsp; |  &nbsp; https://www.flaticon.com/kr/</small>
+                </p>
+                <p><small>Copyright ⓒ 2022 Limjoohyun All rights reserved.</small></p>
+            </address>
+        </footer>
+    </div>
+        <!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./js/common.js"></script>
+</body>
+
+</html>

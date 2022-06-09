@@ -1,0 +1,96 @@
+/* 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@font-face { font-family: 'GmarketSansMedium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); } 
+
+
+/* 기본 */
+* { margin:0; padding:0; box-sizing: border-box; } 
+body { position: relative; font-family: 'Noto Sans KR', sans-serif,'GmarketSansMedium'; z-index: -2; background-color: #ffdc69; } 
+#wrap { position: relative; background-color: #FFFBDD; border: 2px solid #000; border-radius: 20px; margin: 20px; overflow: hidden; z-index: -1; } 
+a { text-decoration: none; color: #fff; } 
+li { list-style-type: none; } 
+table{ border-collapse: collapse; }
+
+.clear { clear: both; } 
+.blind { display: none !important; } 
+.center_wrap { max-width: 1200px; margin: 0 auto; } 
+
+
+
+/* 헤더 */
+header { width: 100%; background-color: #32A889; font-family: 'GmarketSansMedium'; z-index: 3; border-bottom: 2px solid #000; } 
+header nav { height: 75px; } 
+header nav h1 a { float: left; display: block; width: 220px; height: 60px; margin-top: 5px; background-image: url("../img/logo.png"); background-size: contain; background-repeat: no-repeat; background-position: center; } 
+header nav h1 a:hover { background-image: url("../img/logo_hover.png"); } 
+header nav ul#gnb { position: static; height: 75px; float: right; text-align: right; } 
+header nav ul#gnb li { display: inline-block; margin: 28px 30px 0 30px; font-size: 16px; text-align: center; } 
+header nav ul#gnb li a:hover{ color: #136952;  font-weight: bold; transition: all .3s; }
+header nav button.menu-trigger { display: none; } 
+
+main { width: calc(100% - 10px); margin: 10px auto; position: relative; z-index: -1; } 
+
+/* 푸터 */
+footer { margin-top: 50px; padding: 20px 0 0 30px; width: 100%; height: 120px; background-color: #32A889; color: #fff; font-family: 'GmarketSansMedium'; font-size: 13px; border-top: 2px solid #000; } 
+address { font-style: normal; } 
+
+
+/* 브라우저 넓이 1024px 이하 일 때 적용 */
+@media screen and (max-width: 1024px) { 
+   
+   header { top:0; } 
+   header nav h1 a { width: calc(100% - 110px); margin-left: 50px; } 
+   header nav ul#gnb { position: fixed; margin-top: 30px; top: 75px; right: -40%; height: 450px; background-color: #fff; border: 2px solid #000; border-radius: 20px; overflow: hidden; } 
+
+   header nav ul#gnb li { display: block; margin: 0; padding: 25px; border-bottom: 2px solid #000; font-size: 20px; color: #000; } 
+   header nav ul#gnb li a { color: #000; }
+   header nav ul#gnb li#gnb_title { background-color: #ED7D31; padding: 15px; color: #fff; } 
+
+   header nav ul#gnb li:hover { background-color: #ffcf33; transition: all .3s; } 
+   header nav ul#gnb.active { width: 100%; } 
+   header nav button.menu-trigger { display: block; } 
+
+
+   /* menu-trigger */
+   .menu-trigger,.menu-trigger span { display: inline-block; } 
+   .menu-trigger { position: relative; top: 20px; width: 36px; height: 36px; border-radius: 10px; background: none; border: none; cursor: pointer; } 
+   .menu-trigger span { position: absolute; left: 0; width: 100%; height: 4px; background-color: #fff; border-radius: 4px; } 
+
+   .menu-trigger span:nth-of-type(2) { top: 0; animation: span2 .75s forwards; } 
+   .menu-trigger span:nth-of-type(3) { top: 16px; transition: all .25s .25s; opacity: 1; } 
+   .menu-trigger span:nth-of-type(4) { bottom: 0; animation: span4 .75s forwards; } 
+
+   .menu-trigger.active span:nth-of-type(2) { animation: span2_ac .75s forwards; } 
+   .menu-trigger.active span:nth-of-type(3) { opacity: 0; } 
+   .menu-trigger.active span:nth-of-type(4) { animation: span4_ac .75s forwards; } 
+
+   @keyframes span2 { 
+      0% { transform: translateY(16px) rotate(45deg); } 
+      50% { transform: translateY(16px) rotate(0); } 
+      100% { transform: translateY(0) rotate(0); } 
+   }
+   @keyframes span4 { 
+      0% { transform: translateY(-16px) rotate(-45deg); } 
+      50% { transform: translateY(-16px) rotate(0); } 
+      100% { transform: translateY(0) rotate(0); } 
+   }
+   @keyframes span2_ac { 
+      0% { transform: translateY(0) rotate(0); } 
+      50% { transform: translateY(16px) rotate(0); } 
+      100% { transform: translateY(16px) rotate(45deg); } 
+   }
+   @keyframes span4_ac { 
+      0% { transform: translateY(0) rotate(0); } 
+      50% { transform: translateY(-16px) rotate(0); } 
+      100% { transform: translateY(-16px) rotate(-45deg); } 
+   } 
+}
+
+
+
+@media screen and (max-width: 768px) { 
+
+   #wrap { border: none; border-radius: 0; margin: 0; }
+   header{border-bottom: none;}
+   footer { border-top: none; } 
+   
+}

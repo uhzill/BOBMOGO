@@ -1,0 +1,52 @@
+/* index main style */
+
+/* 배너 */
+@font-face { font-family: 'ONE-Mobile-POP'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff'); } 
+
+main.main_padding { padding: 10px 20px 10px 20px; } 
+main section#main_banner { width: 100%; position: relative; margin-top: 30px; height: 400px; border: 2px solid #000; border-radius: 30px; overflow: hidden; } 
+main section#main_banner img { position: absolute; transition: left 0.5s; } 
+
+main section#main_banner button { position: absolute; top: 50%; margin-top: -25px; width: 50px; height: 50px; color: #ff8c34; background: none; border: 0; font-size: 50px; line-height: 0%; font-family: 'ONE-Mobile-POP'; cursor: pointer; } 
+main section#main_banner button:hover { color: #ff6334; } 
+main section#main_banner #prev_btn { left: 20px; } 
+main section#main_banner #next_btn { right: 20px; } 
+
+main section#main_banner #dotList { position: absolute; left: calc(50% - 25px); bottom: 20px; } 
+main section#main_banner #dotList li { display: inline-block; width: 15px; height: 15px; border: 4px solid #ED7D31; border-radius: 50%; margin: 0 5px; cursor: pointer; } 
+main section#main_banner #dotList li.active { background-color: #ED7D31; } 
+
+
+/* 인기레시피, 오늘 식단 공통*/
+#sec2, #sec3 { position: relative; margin-top: 50px; height: 300px; background-color: #fff; border: 2px solid #000; font-size: 16px; } 
+#sec2 li span, #sec3 li span{ display: inline-block; padding: 5px 0;}
+#sec2 .sec_wrap a:hover, #sec3 .sec_wrap a:hover { color:#ED7D31; }
+
+.sec_wrap { margin: 25px 30px; width: 90%; min-width: 200px; }
+.tit{ float: left; width: 70%;   overflow: hidden; }
+.date{ float: right; width: 30%; text-align: right; overflow: hidden; }
+hr{ width: 100%; height: 1px; background-color: #bbb; border: none; }
+
+#sec2 li a, #sec3 li a{ color: #000; display: block; }
+#sec2 li a, #sec3 li a:hover{ color: #000; display: block; }
+#sec2_title,#sec3_title { margin: -30px 0 0 -2px; border: 2px solid #000; border-radius: 50px; text-align: center; font-family: 'GmarketSansMedium'; font-size: 20px; line-height: 60px; } 
+#sec2_more_btn, #sec3_more_btn { position: absolute; width: 50px; height: 50px; right: 15px; bottom: 10px; border: 2px solid #000; border-radius: 50%; font-size: 45px; font-family: 'ONE-Mobile-POP'; text-align: center; cursor: pointer; } 
+
+/* 인기레시피 */
+main section#sec2 { float: left; width: 58%; border-radius: 0 0 30px 30px; } 
+main section#sec2 h2#sec2_title { width: calc(100% + 4px); height: 60px; background-color: #FFD960; } 
+main section#sec2 #sec2_more_btn a { color:#ffcf33; } 
+main section#sec2 #sec2_more_btn:hover { transform: rotate(90deg); transition: all .3s; } 
+main section#sec2 #sec2_more_btn:not(:hover) { transform: rotate(-90deg); transition: all .3s; } 
+
+/* 오늘의 식단 */
+main section#sec3 { float: right; width: 40%; border-radius: 0 0 30px 30px; } 
+main section#sec3 h2#sec3_title { width: calc(100% + 4px); height: 60px; background-color: #ED7D31; } 
+main section#sec3 #sec3_more_btn a { color:#ED7D31; } 
+main section#sec3 #sec3_more_btn:hover { transform: rotate(90deg); transition: all .3s; } 
+main section#sec3 #sec3_more_btn:not(:hover) { transform: rotate(-90deg); transition: all .3s; } 
+
+
+@media screen and (max-width: 1024px) { 
+    main section#sec2, main section#sec3 { float: none; width: 100%; } 
+}

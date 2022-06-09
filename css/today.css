@@ -1,0 +1,47 @@
+/* recipe main style */
+/* 레시피 */
+@font-face { font-family: 'ONE-Mobile-POP'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff'); } 
+
+/* 페이지제목 */
+h1,h2 { font-family: 'GmarketSansMedium'; color: #000; } 
+main { margin: 40px auto; top: 30px; max-width: 1200px; background-color: #fff; border: 2px solid #000; border-radius: 0 0 30px 30px; } 
+main h1 { position: relative; margin: -30px 0 0 -2px; padding: 15px; width: calc(100% + 4px); background-color: #ED7D31; border: 2px solid #000; border-radius: 50px; text-align: center; font-size: 18px; } 
+main h1 a { display: inline-block; position: absolute; top: 12px; right: 20px; width: 30px; height: 30px; background-color: #FFE490; color: #000; border: 2px solid #000; border-radius: 50%; font-family: 'ONE-Mobile-POP'; line-height: 22px; } 
+main h1 a:hover { transform: scale(1.1) rotate(90deg); transition: all .3s } 
+main h1 a:not(:hover) { transform: rotate(-90deg); transition: all .3s; } 
+
+
+/* 메인 콘텐츠 */
+main .today_content { position: relative; } 
+main .today_content #today0 { display: inline-block; margin: 20px; width: 40%; height: 400px; background-color: #fff; border: 2px solid #000; border-radius: 30px; background-repeat: no-repeat; background-size: cover; background-position: center; } 
+main .today_content #box { position: absolute; top: 20px; left: 43%; width: 55%; padding: 30px; height: 400px; text-align: left; border: 2px solid #000; border-radius: 30px; font-size: 18px; text-align: center; } 
+main .today_content #box p#text { margin-top: 20px; text-align: left; } 
+
+main .today_content #comment { margin: 20px; }
+main .today_content #comment h4 { margin-bottom: 10px; }
+main .today_content #comment textarea { float: left; padding: 15px; width: 84%; height: 100px; border: 2px solid #000; border-radius: 10px; font-size: 15px; } 
+main .today_content #comment button { float: right; width: 15%; height: 100px; background-color: #ffcf33; border: 2px solid #000; border-radius: 10px; font-size: 15px; font-family: 'GmarketSansMedium'; cursor: pointer;}
+main .today_content #comment button:hover{ background-color: #ED7D31; }
+main .today_content #comment p{ position: relative; top: 10px; text-align: center; margin: 25px; } 
+
+
+/* 레시피 이미지 */
+#today0 { background-image: url("../img/r40.jpg"); } 
+
+
+
+@media screen and (max-width: 1024px) { 
+
+    main .today_content #today0 { width: calc(100% - 40px); }  
+    main .today_content #box { margin: 5px 20px; position: static; width: calc(100% - 40px); height: auto; } 
+    main .recipe_box { height: 400px; } 
+    
+}
+
+@media screen and (max-width: 768px) { 
+
+    section.button { margin: 0 auto; width: 160px; } 
+    section.button label { margin: 3px 2px; border-radius: 50px; border-bottom: 2px solid #000; } 
+    main section.today_content .tab_item .today_content { border-radius: 20px; } 
+
+ }

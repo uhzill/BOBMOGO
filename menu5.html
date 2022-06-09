@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="./img/site_img.png" />
+
+    <!-- 파비콘 -->
+    <link rel="icon" href="./img/favicon_32.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="./img/favicon_180.ico" sizes="180x180" />
+
+    <!-- CSS -->
+    <link rel='stylesheet' type='text/css' href='./css/common.css' />
+    <link rel='stylesheet' type='text/css' href='./css/menu5.css' />
+
+    <title>BOB MOGO - MY</title>
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div id="wrap">
+        <header>
+            <nav class="center_wrap" >
+                <h1><a href="./index.html"></a></h1>
+                <ul id="gnb" >
+                    <li><a href="./menu1.html">인기</a></li>
+                    <li><a href="./menu2.html">레시피</a></li>
+                    <li><a href="./menu3.html">이벤트</a></li>
+                    <li><a href="./menu4.html">오늘식사</a></li>
+                    <li><a href="./menu5.html">MY</a></li>
+                </ul>
+                <button id="menu" class="menu-trigger">
+                    <span class="blind">메뉴보기</span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </header>
+
+        <main>
+        <h1>MY BOB<a href="index.html">x</a></h1>
+
+        <section id='my_tabbar'>
+            <input id="tab1" type="radio" name="tab" checked="checked">
+            <input id="tab2" type="radio" name="tab">
+        
+            <section class='button'>
+                <label for="tab1">MY레시피</label>
+                <label for="tab2">식사기록</label>
+            </section>
+
+            <div class="tab_item">
+                <div id="recipe" class="preview-image">
+                    <form>
+                        <label for="input_file">이미지 업로드</label> 
+                        <input type="file" id="input_file" class="upload-hidden"> 
+                        <textarea class="textarea" cols="30" rows="10"></textarea>
+
+                        <section class='btn'>
+                            <button id="btn_share1" class="input_btn_share">레시피 공유</button>
+                            <button id="btn_save1" class="input_btn_save">나만보기 저장</button>
+                        </section>
+                    </form>
+                    <section>
+                        <h1 class="my_title">MY레시피 모아보기</h1>
+                        <div id="tab1_1" class="my">
+                            <a href="#"><h2 class="my_list">작성하신 레시피가 없습니다</h2></a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        
+            <div class="tab_item">
+                <div id="diary" class="preview-image">
+                    <label for="input_file">이미지 업로드</label> 
+                    <input type="file" id="input_file" class="upload-hidden"> 
+                    <textarea class="textarea" cols="30" rows="10"></textarea>
+
+                    <section class='btn'>
+                        <button id="btn_share2" class="input_btn_share">오늘식단 공유</button>
+                        <button id="btn_save2" class="input_btn_save">나만보기 저장</button>
+                    </section>
+
+                    <section>
+                        <h1 class="my_title">내 식사기록 모아보기</h1>
+                        <div id="tab2_1" class="my">
+                            <a href="./today.html"><h2 class="my_list">더 먹고싶다</h2></a>
+                        </div>
+                        <div id="tab2_2" class="my">
+                            <a href="#"><h2 class="my_list">진짜 배고파서 후딱 만들어먹었디렁</h2></a>
+                        </div>
+                        <div id="tab2_3" class="my">
+                            <a href="#"><h2 class="my_list">건강한맛이군요..🍚</h2></a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        </main>
+        <div class="clear"></div>
+        <footer>
+            <address class="center_wrap">
+                <p>
+                    Tel. <a href="tel:010-1234-1234">010-5123-4110</a><br>
+                    Mail. <a href="mailto:22161041@kaywon.ac.kr">22161041@kaywon.ac.kr</a><br>
+                    <small>Image source. https://www.menupan.com/ &nbsp; |  &nbsp; https://www.flaticon.com/kr/</small>
+                </p>
+                <p><small>Copyright ⓒ 2022 Limjoohyun All rights reserved.</small></p>
+            </address>
+        </footer>
+    </div>
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/menu5.js"></script>
+</body>
+
+</html>
